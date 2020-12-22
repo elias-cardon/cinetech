@@ -9,11 +9,16 @@ const MovieInfo = (props) => {
             </div>
             <div className="row">
                 <div className="col s12 m4">
-                    {props.currentMovie.poster_path == null ?
-                        <img src={"https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg"}
-                             alt="Card image" style={{width: "100%", height: 360}}/> :
-                        <img src={"http://image.tmdb.org/t/p/w185${props.currentMovie.poster_path}"} alt="Card image"
-                             style={{width: "100%", height: 360}}/>}
+                    {props.currentMovie.poster_path == null ? <img className=""
+                                                                   src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`}
+                                                                   alt="Card image cap" style={{
+                        width: "100%",
+                        height: 360
+                    }}/> : <img className="" src={`http://image.tmdb.org/t/p/w185${props.currentMovie.poster_path}`}
+                                alt="Card image" style={{
+                        width: "100%",
+                        height: 360
+                    }}/>}
                 </div>
                 <div className="row s12 m8">
                     <div className="info-container">
