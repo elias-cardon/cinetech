@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a2c45ee-d2cd-4256-9de8-b6ce91aaa5c8" name="Default Changelist" comment="Correction des poster qui ne s'affichent pas dans les détails des films" />
+    <list default="true" id="2a2c45ee-d2cd-4256-9de8-b6ce91aaa5c8" name="Default Changelist" comment="Correction des poster qui ne s'affichent pas dans les détails des films">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +61,7 @@
       <workItem from="1608561714321" duration="137000" />
       <workItem from="1608561896331" duration="474000" />
       <workItem from="1608650640397" duration="9116000" />
+      <workItem from="1608890199457" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Projet finit">
       <created>1608662643750</created>

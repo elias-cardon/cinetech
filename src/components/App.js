@@ -35,7 +35,7 @@ class App extends Component {
     }
 
     nextPage = (pageNumber) => {
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}&language=en-US&page=${pageNumber}`)
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${this.state.searchTerm}&language=fr-FR&page=${pageNumber}`)
             .then(data => data.json())
             .then(data => {
                 this.setState({movies: [...data.results], totalResults: data.total_results, currentPage: pageNumber})
