@@ -45,12 +45,12 @@ class App extends Component {
     viewMovieInfo = (id) => {
         let filteredMovie;
         this.state.movies.forEach((movie, i) => {
-            if(movie.id === id) {
+            if (movie.id === id) {
                 filteredMovie = movie
             }
         })
 
-        this.setState({ currentMovie: filteredMovie })
+        this.setState({currentMovie: filteredMovie})
     }
 
     closeMovieInfo = () => {
@@ -66,8 +66,9 @@ class App extends Component {
                     <SearchArea handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
                     <MovieList viewMovieInfo={this.viewMovieInfo} movies={this.state.movies}/>
                 </div> : <MovieInfo currentMovie={this.state.currentMovie} closeMovieInfo={this.closeMovieInfo}/>}
-                {this.state.totalResults > 20 && this.state.currentMovie == null ? <Pagination pages={numberPages} nextPage={this.nextPage}
-                                                            currentPage={this.state.currentPage}/> : ''}
+                {this.state.totalResults > 20 && this.state.currentMovie == null ?
+                    <Pagination pages={numberPages} nextPage={this.nextPage}
+                                currentPage={this.state.currentPage}/> : ''}
             </div>
         )
     }

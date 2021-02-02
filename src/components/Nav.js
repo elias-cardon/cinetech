@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Nav = () => {
-    return(
+    return (
         <nav>
             <div className="nav-wrapper container">
                 <a href="#" className="brand-logo">La Plateforme du cinéma</a>
